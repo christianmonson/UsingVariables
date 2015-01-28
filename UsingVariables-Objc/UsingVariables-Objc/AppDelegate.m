@@ -17,7 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    // Insert code here...
+    
+    CGFloat height;
+    CGFloat weight;
+
+    height = 71.0f;
+    weight = 185.0f;
+
+    CGFloat bodyMassIndex = (weight / (height * height)) * 703;
+    
+    NSLog(@"%f",bodyMassIndex);
     
     
     return YES;
